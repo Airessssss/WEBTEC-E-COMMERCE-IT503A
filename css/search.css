@@ -1,0 +1,52 @@
+.search-results {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#search-title {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.result-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.result-item:hover {
+  transform: translateY(-5px);
+}
+
+.result-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.result-item h3 {
+  font-size: 1em;
+  margin: 8px 0 5px;
+}
+
+.result-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.result-item .price {
+  font-weight: bold;
+  color: black;
+  margin-top: 5px;
+}
