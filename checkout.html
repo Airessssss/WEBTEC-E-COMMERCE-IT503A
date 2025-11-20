@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Borsa | Checkout</title>
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo"><img src="image/logo.png" alt="logo"></h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h2>Checkout</h2>
+
+    <div class="checkout-container">
+      <div class="product-details">
+        <img id="checkout-image" src="" alt="Selected Bag">
+        <div class="info">
+          <h3 id="checkout-name"></h3>
+          <p id="checkout-price"></p>
+        </div>
+      </div>
+
+      <form id="checkout-form">
+        <h3>Shipping Information</h3>
+        <label>Full Name:</label>
+        <input type="text" id="name" required>
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <label>Address:</label>
+        <input type="text" id="address" required>
+        <label>Payment Method:</label>
+        <select id="payment" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="gcash">GCash</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+
+        <button type="submit" class="confirm-btn">Confirm Purchase</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Bella Borsa. All rights reserved.</p>
+  </footer>
+
+  <script src="js/checkout.js"></script>
+  <!-- Purchase Success Popup -->
+<div id="successPopup" class="popup-overlay">
+  <div class="popup-content">
+    <h2>👜 Purchase Successful!</h2>
+    <p id="popupMessage">Thank you for your order.</p>
+    <button id="popupCloseBtn">OK</button>
+  </div>
+</div>
+
+
+</body>
+</html>

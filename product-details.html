@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Borsa | Product Details</title>
+  <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo"><img src="image/logo.png" alt="Bella Borsa Logo"></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="collection.html" class="active">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<main class="product-details-container">
+  <button class="back-button" onclick="window.location.href='collection.html'">← Back to Collection</button>
+  
+  <div class="product-details">
+    <div class="product-image">
+      <img id="product-img" src="" alt="Product Image">
+    </div>
+    
+
+    <div class="product-info">
+  <h2 id="product-name">Chanel Classic Flap Bag</h2>
+  <p id="product-price" data-price="6500">₱6,500.00</p>
+  <p id="product-description">Timeless quilted leather with signature chain strap.</p>
+
+  <!-- 🧮 Quantity selector -->
+  <div class="quantity-container">
+    <button class="qty-btn" id="decrease">−</button>
+    <span id="quantity">1</span>
+    <button class="qty-btn" id="increase">+</button>
+  </div>
+
+  <!-- 💰 Total display -->
+  <p class="total-price">Total: ₱<span id="total">6500.00</span></p>
+
+  <!-- 🛒 Buttons -->
+  <div class="button-group">
+    <button id="add-to-cart" class="btn">Add to Cart</button>
+    <button id="buy-now" class="btn secondary">Buy Now</button>
+  </div>
+
+</div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Bella Borsa. All rights reserved.</p>
+</footer>
+<script src="js/product-details.js"></script>
+
+
+</body>
+</html>

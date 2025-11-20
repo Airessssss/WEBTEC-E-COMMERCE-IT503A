@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Borsa | Cart</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo"><img src="image/logo.png" alt="logo"></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="active">Cart</a>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <h3>Total: ₱<span id="cart-total">0</span></h3>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <div id="confirm-modal" class="modal">
+    <div class="modal-content">
+      <p>Remove this item from cart?</p>
+      <div class="modal-actions">
+        <button id="confirm-remove" class="yes">Yes</button>
+        <button id="cancel-remove" class="no">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
